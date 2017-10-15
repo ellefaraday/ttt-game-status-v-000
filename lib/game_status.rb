@@ -31,6 +31,8 @@ def won?(board)
     end
     token_check = []
   end
-    winning_array
+    if winning_array.empty?
+    else
+      winning_array
 end
 puts won?(board)
