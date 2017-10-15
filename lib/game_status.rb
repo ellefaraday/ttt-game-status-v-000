@@ -42,7 +42,7 @@ def won?(board)
 end
 
 def full(board)
-  board.all? != " "
+  board.all? {|place| != " "}
 end
 
 puts full(board)
