@@ -36,4 +36,4 @@ def won?(board)
   end
 end
 
-#puts won?(board)
+puts won?(board)
