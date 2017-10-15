@@ -15,7 +15,7 @@ WIN_COMBINATIONS = [
   [2, 4, 6]
 ]
 
-board = ["X", "X", "X", "X", "X", "X", "X", "X", "X"]
+board = ["X", "X", "X", "X", " ", " ", " ", "X", "X"]
 def won?(board)
   winning_array = []
   WIN_COMBINATIONS.each do |win_combination|
