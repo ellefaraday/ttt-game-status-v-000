@@ -15,7 +15,7 @@ WIN_COMBINATIONS = [
   [2, 4, 6]
 ]
 
-board = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 def won?(board)
   token_check = []
   winning_array = []
