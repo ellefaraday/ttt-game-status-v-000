@@ -37,3 +37,4 @@ def won?(board)
     end
 end
 puts won?(board)
+puts winning_array
