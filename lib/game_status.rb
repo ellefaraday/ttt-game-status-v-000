@@ -41,4 +41,8 @@ def won?(board)
   end
 end
 
-puts won?(board)
+def full(board)
+  board.all? != " "
+end
+
+puts full(board)
