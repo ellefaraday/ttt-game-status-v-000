@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 ]
 test = []
 test = WIN_COMBINATIONS[0]
-retrun test
+return test
 board = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
 def won?(board)
   token_check = []
