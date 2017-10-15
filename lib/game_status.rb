@@ -60,7 +60,7 @@ end
 def over?(board)
   if won?(board) != false
     true
-  elsif draw?
+  elsif draw?(board)
     true
   else
     false
