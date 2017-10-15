@@ -22,9 +22,9 @@ def won?(board)
     win.each do |place|
       token_check << board[place]
     end
-    if token_check.all? {|token| == "X"}
+    if token_check.all? {|token| "X"}
       winner = WIN_COMBINATIONS[win]
-    elsif token_check.all? {|token| == "O"}
+    elsif token_check.all? {|token| "O"}
       winner = WIN_COMBINATIONS[win]
     else
     end
