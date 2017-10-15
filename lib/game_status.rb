@@ -41,8 +41,8 @@ def won?(board)
   end
 end
 
-def full(board)
+def full?(board)
     board.none? {|place| place == " "}
 end
 
-puts full(board)
+puts full?(board)
