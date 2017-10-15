@@ -20,12 +20,13 @@ def won?(board)
   WIN_COMBINATIONS.each do |win|
     winner? = []
     win.each do |place|
-    winner? << board[place]
+      winner? << board[place]
+    end
+    if winner?.all? {|token| == "X"}
+      winner = WIN_COMBINATIONS[win]
+    else
+    end
   end
-  if winner?.all? {|token| == "X"}
-    winner = WIN_COMBINATIONS[win]
-  else
-  end
-  winner
+    winner
 end
-puts won?(board)   
+puts won?(board)
