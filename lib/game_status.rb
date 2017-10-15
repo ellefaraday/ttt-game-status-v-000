@@ -34,5 +34,6 @@ def won?(board)
     if winning_array.empty?
     else
       winning_array
+    end
 end
 puts won?(board)
