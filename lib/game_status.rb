@@ -45,4 +45,14 @@ def full?(board)
     board.none? {|place| place == " "}
 end
 
-puts full?(board)
+def draw?(board)
+  if full?(board)
+    if won? != false
+      false
+    else
+      true
+    end
+  else
+    false
+  end
+end
