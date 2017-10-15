@@ -20,7 +20,7 @@ def won?(board)
   token_check = []
   winning_array = []
   WIN_COMBINATIONS.each do |win_condition|
-    win.each do |place|
+    win_condition.each do |place|
       token_check << board[place]
     end
     if token_check.all? {|token| "X"}
