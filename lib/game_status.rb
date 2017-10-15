@@ -31,6 +31,6 @@ def won?(board)
     end
     token_check = []
   end
-    winner
+    winning_array
 end
 puts won?(board)
