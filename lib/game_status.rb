@@ -18,6 +18,7 @@ WIN_COMBINATIONS = [
 board = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
 def won?(board)
   token_check = []
+  winner = []
   WIN_COMBINATIONS.each do |win|
     win.each do |place|
       token_check << board[place]
