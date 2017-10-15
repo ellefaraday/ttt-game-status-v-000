@@ -17,6 +17,7 @@ WIN_COMBINATIONS = [
 
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 def won?(board)
+  winning_array = []
   WIN_COMBINATIONS.each do |win_combination|
     win_index_1 = win_combination[0]
     win_index_2 = win_combination[1]
