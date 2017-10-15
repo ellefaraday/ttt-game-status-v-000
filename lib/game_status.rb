@@ -14,21 +14,19 @@ WIN_COMBINATIONS = [
   [0, 4, 8],
   [2, 4, 6]
 ]
-test = []
-test = WIN_COMBINATIONS[0]
-return test
+
 board = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
 def won?(board)
   token_check = []
-  winner = []
+  winning_array = []
   WIN_COMBINATIONS.each do |win|
     win.each do |place|
       token_check << board[place]
     end
     if token_check.all? {|token| "X"}
-      winner = WIN_COMBINATIONS[win]
+      winning_array = WIN_COMBINATIONS[win]
     elsif token_check.all? {|token| "O"}
-      winner = WIN_COMBINATIONS[win]
+      winning_array = WIN_COMBINATIONS[win]
     else
     end
     token_check = []
