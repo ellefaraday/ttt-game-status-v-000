@@ -17,15 +17,18 @@ WIN_COMBINATIONS = [
 
 board = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
 def won?(board)
+  winner? = []
   WIN_COMBINATIONS.each do |win|
-    winner? = []
     win.each do |place|
       winner? << board[place]
     end
     if winner?.all? {|token| == "X"}
       winner = WIN_COMBINATIONS[win]
+    elsif winner?.all? {|token| == "O"}
+      winner = WIN_COMBINATIONS[win]
     else
     end
+    winner? = []
   end
     winner
 end
