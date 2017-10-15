@@ -15,7 +15,7 @@ WIN_COMBINATIONS = [
   [2, 4, 6]
 ]
 
-board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+board = ["X", "X", "X", "X", "X", "X", "X", "X", "X"]
 def won?(board)
   winning_array = []
   WIN_COMBINATIONS.each do |win_combination|
@@ -42,7 +42,7 @@ def won?(board)
 end
 
 def full(board)
-  board.none? {|place| place == " "}
+    board.none? {|place| place == " "}
 end
 
 puts full(board)
