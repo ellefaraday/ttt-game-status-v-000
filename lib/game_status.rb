@@ -14,3 +14,18 @@ WIN_COMBINATIONS = [
   [0, 4, 8],
   [2, 4, 6]
 ]
+
+board = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
+def won?(board)
+  WIN_COMBINATIONS.each do |win|
+    winner? = []
+    win.each do |place|
+    winner? << board[place]
+  end
+  if winner?.all? {|token| == "X"}
+    winner = WIN_COMBINATIONS[win]
+  else
+  end
+  winner
+end
+puts won?(board)   
