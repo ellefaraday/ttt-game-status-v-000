@@ -56,3 +56,13 @@ def draw?(board)
     false
   end
 end
+
+def over?(board)
+  if won?(board) != false
+    true
+  elsif draw?
+    true
+  else
+    false
+  end
+end
